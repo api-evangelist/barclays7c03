@@ -1,23 +1,89 @@
 aid: barclays7c03
+
 name: Barclays7c03
-description: 'Barclays7c03 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Barclays7c03 is a stub entry for Barclays Group, a global financial services company offering banking, credit cards, wealth management, and investment services. The company operates worldwide with a corporate website at home.barclays, providing extensive information about its strategy, sustainability, and corporate governance. While the specific API offerings are not yet documented, the organization maintains a developer portal at developer.barclays.com for API exchange and integration resources.'
+
 url: https://raw.githubusercontent.com/api-evangelist/barclays7c03/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Banking
+- Finance
+- Global
+- Corporate
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: security/barclays7c03-vulnerability-disclosure.yml
+- type: SecurityTxt
+  url: well-known/barclays7c03-security.txt
+- type: WellKnown
+  url: well-known/barclays7c03-well-known.yml
+- type: Hosts
+  url: hosts/barclays7c03-hosts.yml
+- type: Vendors
+  url: vendors/barclays7c03-vendors.yml
+- type: TermsOfService
+  url: https://home.barclays/terms-of-use/
+- type: SignUp
+  url: https://home.barclays/archive-barclays/collections/featured-items/register-of-new-clerks-union-bank-of-manchester/
+- type: PrivacyPolicy
+  url: https://home.barclays/privacy-policy/
+- type: Newsroom
+  url: https://home.barclays/news/
+- type: Leadership
+  url: https://home.barclays/who-we-are/structure-and-leadership/leadership/
+- type: VulnerabilityDisclosure
+  url: security/barclays7c03-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/barclays7c03-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/barclays7c03
+  url: https://home.barclays/
+- type: Documentation
+  url: https://developer.barclays.com
+- type: APIReference
+  url: https://developer.barclays.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-09-27'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://developer.barclays.com/mcp
+    status: 403
+  - url: https://home.barclays/mcp
+    status: 403
+  - url: https://equityzen.com/company/barclays7c03
+    status: 403
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
