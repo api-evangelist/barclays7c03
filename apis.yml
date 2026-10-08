@@ -38,6 +38,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: RateLimits
+  url: rate-limits/barclays7c03-rate-limits.yml
 - type: Security
   url: security/barclays7c03-vulnerability-disclosure.yml
 - type: SecurityTxt
