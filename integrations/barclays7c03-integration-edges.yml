@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/barclays7c03/integrations
 - https://n8n.io/integrations/barclays7c03/
@@ -9,8 +9,26 @@ checked:
 - https://composio.dev/toolkits/barclays7c03
 - https://monid.ai/tools/barclays7c03
 - https://n8n.io/integrations/barclays7c03/
+- https://www.openbanking.org.uk/regulated-providers/barclays-bank/
 - https://zapier.com/apps/barclays7c03/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: UK Open Banking
+  partner: null
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.openbanking.org.uk/regulated-providers/barclays-bank/
+  contract_reference:
+    register: UK Open Banking regulated providers (OBL directory)
+    spec_file: null
+    role: Account Providers,Third Party Providers
+    registered_name: Barclays Bank UK PLC
+    register_id: https://register.fca.org.uk/s/firm?id=001b000003WgItdAAF
+    matched_domain: home.barclays
+    api_families: null
+    detected_by: sweep-standard-registers.py
+    detected: '2026-10-14'
 templates: []
